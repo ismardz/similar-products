@@ -30,7 +30,7 @@ public class ProductFacade {
         return executeWithExceptionHandling(() -> productClient.getSimilarProductIds(productId));
     }
 
-    private <T> T executeWithExceptionHandling(Supplier<T> action) {
+    private <T> T executeWithExceptionHandling(final Supplier<T> action) {
         try {
             return action.get();
         } catch (FeignException e) {

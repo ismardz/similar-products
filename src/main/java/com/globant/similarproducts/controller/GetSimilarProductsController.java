@@ -35,7 +35,7 @@ public class GetSimilarProductsController {
     )
     @GetMapping("/product/{productId}/similar")
     public ResponseEntity<List<SimilarProductDetail>> getSimilarProduct(
-        @PathVariable("productId") String productId
+        final @PathVariable("productId") String productId
     ) {
         return ResponseEntity.status(HttpStatus.OK)
             .body(getSimilarProductsService.getSimilarProducts(productId).similarProducts());
