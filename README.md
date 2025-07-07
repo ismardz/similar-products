@@ -27,7 +27,7 @@ GET /product/{productId}/similar
 
 Example:
 ```bash
-curl 'http://localhost:8080/product/1/similar'
+curl 'http://localhost:5000/product/1/similar'
 ```
 
 Response:
@@ -47,7 +47,7 @@ Response:
 
 Access the interactive documentation at (once the application is running in local environment):
 
-- [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+- [http://localhost:5000/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 ## Endpoint performance
 
