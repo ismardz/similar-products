@@ -51,7 +51,7 @@ Access the interactive documentation at (once the application is running in loca
 
 ## Endpoint performance
 
-elow are the results of two consecutive executions of the performance test using k6.
+Below are the results of two consecutive executions of the performance test using k6.
 Refer to [this section](./proposal/readme.md#testing-and-self-evaluation) for instructions on how to run the test.
 
 
