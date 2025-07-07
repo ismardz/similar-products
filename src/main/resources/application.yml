@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: similar-products
+
+server:
+  port: 5000
+
+client:
+  product:
+    url: "http://localhost:3001"
+    endpoints:
+      similar-ids: "/product/{productId}/similarids"
+      product-detail: "/product/{productId}"
