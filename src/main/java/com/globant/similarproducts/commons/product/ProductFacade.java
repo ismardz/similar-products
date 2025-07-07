@@ -39,7 +39,7 @@ public class ProductFacade {
         }
     }
 
-    @Scheduled(cron = "0 0 0 * * *")
+    @Scheduled(cron = "0 0 * * * *") // clean cache every hour
     @CacheEvict(cacheNames = {"getProductDetail", "getSimilarProductIds"}, allEntries = true)
     public void evictProductDetailCache() {
         log.info("cacheEvict for getProductDetail and getSimilarProductIds");
