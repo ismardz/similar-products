@@ -3,7 +3,9 @@ package com.ismardz.similarproducts.controller;
 import com.ismardz.similarproducts.commons.product.model.ProductDetail;
 import com.ismardz.similarproducts.service.GetSimilarProductsService;
 import com.ismardz.similarproducts.service.model.SimilarProductDetail;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -19,6 +21,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@OpenAPIDefinition(info = @Info(title = "Similar Products API", version = "1.0"))
 public class GetSimilarProductsController {
 
     private final GetSimilarProductsService getSimilarProductsService;
